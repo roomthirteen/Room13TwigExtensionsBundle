@@ -3,6 +3,15 @@ Room13TwigExtensions
 
 A collection of useful twig helpers and extensions extracted from my projects for reusability. In the following sections each filter/function is described by its own section.
 
+Configuration
+--------------------
+By default, nothing has to be configured. However it is possible to remove/customize the prefix of all filters/functions by setting the prefix configuration value.
+
+So if no naming conflicts exist, you can remove the prefix by the following configuration:
+
+room13_twig_extensions:
+    prefix: ~
+
 Filter: room13_entity_url
 --------------------
 
