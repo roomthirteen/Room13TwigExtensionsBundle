@@ -14,9 +14,12 @@ class EntityRouteExtension extends \Twig_Extension
      */
     private $router;
 
-    public function __construct(RouterInterface $router)
+    private $prefix;
+
+    public function __construct(RouterInterface $router,$prefix)
     {
         $this->router = $router;
+        $this->prefix = $prefix;
     }
 
     /**
@@ -95,7 +98,7 @@ class EntityRouteExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            'room13_entity_url'  => new \Twig_Filter_Method($this,'generateEntityUrl'),
+            $this->prefix.'entity_url'  => new \Twig_Filter_Method($this,'generateEntityUrl'),
         );
     }
 

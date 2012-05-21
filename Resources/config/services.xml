@@ -13,6 +13,7 @@
         <service id="room13.twig_extensions.entity_route_extension" class="%room13_twig_extensions.entity_route_extension.class%">
             <tag name="twig.extension" />
             <argument type="service" id="router"/>
+            <argument>%room13.twig_extensions.prefix%</argument>
         </service>
     </services>
 
