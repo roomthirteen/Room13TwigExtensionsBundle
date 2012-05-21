@@ -9,8 +9,8 @@ By default, nothing has to be configured. However it is possible to remove/custo
 
 So if no naming conflicts exist, you can remove the prefix by the following configuration:
 
-room13_twig_extensions:
-    prefix: ~
+    room13_twig_extensions:
+        prefix: ~
 
 Filter: room13_entity_url
 --------------------
