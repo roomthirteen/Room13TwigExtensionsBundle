@@ -7,12 +7,18 @@
 
     <parameters>
         <parameter key="room13_twig_extensions.entity_route_extension.class">Room13\TwigExtensionsBundle\Twig\EntityRouteExtension</parameter>
+        <parameter key="room13_twig_extensions.date_extension.class">Room13\TwigExtensionsBundle\Twig\DateExtension</parameter>
     </parameters>
 
     <services>
         <service id="room13.twig_extensions.entity_route_extension" class="%room13_twig_extensions.entity_route_extension.class%">
             <tag name="twig.extension" />
             <argument type="service" id="router"/>
+            <argument>%room13.twig_extensions.prefix%</argument>
+        </service>
+
+        <service id="room13.twig_extensions.date_extension" class="%room13_twig_extensions.date_extension.class%">
+            <tag name="twig.extension" />
             <argument>%room13.twig_extensions.prefix%</argument>
         </service>
     </services>
