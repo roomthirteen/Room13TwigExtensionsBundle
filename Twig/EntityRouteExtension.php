@@ -104,6 +104,6 @@ class EntityRouteExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'room13_twig_extension';
+        return 'room13_twig_entity_route_extension';
     }
 }
