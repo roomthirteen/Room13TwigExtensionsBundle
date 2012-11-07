@@ -40,6 +40,7 @@ class DateExtension extends \Twig_Extension
         'n' => 'm',
         'MMM' => 'M',
         'MMMM' => 'MM',
+        'LLLL' => 'MM',
         'm' => 'mm',
         'M' => 'M',
         'F' => 'MM',
